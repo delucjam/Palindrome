@@ -1,5 +1,4 @@
 from collections import deque
-from pytest import raises
 
 def is_palindrome(word):
     if type(word) == str:
