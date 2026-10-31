@@ -25,4 +25,8 @@ def test_step6():
     step6 = palindrome.is_palindrome('laval')
     assert step6 == True
 
+def test_step7():
+    step7 = palindrome.is_palindrome('toronto')
+    assert step7 == False
+
 
