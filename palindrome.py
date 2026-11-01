@@ -1,3 +1,4 @@
+#James DeLuca#
 from collections import deque
 
 def is_palindrome(word):
