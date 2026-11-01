@@ -29,4 +29,8 @@ def test_step7():
     step7 = palindrome.is_palindrome('toronto')
     assert step7 == False
 
+def test_step8():
+    step8 = palindrome.is_palindrome('Able was I ere I saw Elba')
+    assert step8 == True
+
 

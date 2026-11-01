@@ -2,22 +2,21 @@ from collections import deque
 
 def is_palindrome(word):
     if type(word) == str:
-        pass
         if not word:
             return False
-        my_dq = deque()
+        original_dq = deque([], len(word))
         for i in word:
-            my_dq.append(i)
-        re_my_dq = deque(reversed(my_dq))
-        print('my_dq : ', my_dq)
-        print('re_my_dq : ', re_my_dq)
-        if re_my_dq == my_dq:
+            original_dq.append(i.lower())
+            print(original_dq)
+        reverse_dq = original_dq.copy()
+        reverse_dq.extendleft(reverse_dq)
+        print('reverse :', reverse_dq)
+        if reverse_dq == original_dq:
             return True
         else:
             return False
     else:
         raise ValueError('Data type must be a string')
-
 
 
 
